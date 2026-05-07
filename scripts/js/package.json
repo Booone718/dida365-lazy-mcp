@@ -1,0 +1,16 @@
+{
+  "name": "dida365-lazy-mcp-wrapper",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Node.js wrapper for lazy-calling the official Dida365/TickTick MCP endpoint.",
+  "license": "MIT",
+  "scripts": {
+    "check": "node --check dida365_lazy.mjs",
+    "list-projects": "node dida365_lazy.mjs list_projects"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "yaml": "^2.8.2"
+  }
+}

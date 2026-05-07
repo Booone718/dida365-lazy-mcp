@@ -1,0 +1,26 @@
+{
+  "name": "dida365-lazy-mcp",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone Node.js wrapper and Hermes skill for lazy-calling the official Dida365/TickTick MCP endpoint.",
+  "license": "MIT",
+  "bin": {
+    "dida365-lazy": "./scripts/js/dida365_lazy.mjs"
+  },
+  "scripts": {
+    "check": "node --no-warnings --check scripts/js/dida365_lazy.mjs && node --no-warnings --check scripts/js/doctor.mjs",
+    "doctor": "node --no-warnings scripts/js/doctor.mjs",
+    "doctor:json": "node --no-warnings scripts/js/doctor.mjs --json",
+    "list-projects": "node --no-warnings scripts/js/dida365_lazy.mjs list_projects",
+    "list-projects:dry-run": "node --no-warnings scripts/js/dida365_lazy.mjs list_projects --dry-run",
+    "create-task:dry-run": "node --no-warnings scripts/js/dida365_lazy.mjs create_task --dry-run --args-json '{\"task\":{\"title\":\"Task title\",\"projectId\":\"inbox\",\"status\":0,\"kind\":\"TEXT\"}}'"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "yaml": "^2.8.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "task": {
+    "title": "Task title",
+    "content": "Optional short note.",
+    "projectId": "inbox",
+    "priority": 0,
+    "status": 0,
+    "kind": "TEXT"
+  }
+}
