@@ -1,5 +1,7 @@
 # dida365-lazy-mcp
 
+English | [简体中文](README.zh-CN.md)
+
 Standalone Node.js wrapper and Hermes Agent skill for calling the official Dida365 / TickTick MCP endpoint on demand.
 
 The goal is to avoid loading large Dida365 MCP tool schemas into every AI-agent turn. Instead, the agent calls a small local command only when task operations are needed. The command returns compact JSON.
@@ -17,7 +19,7 @@ No Hermes install and no `~/.hermes/config.yaml` are required for the standalone
 Install:
 
 ```bash
-git clone <repo-url> dida365-lazy-mcp
+git clone https://github.com/Booone718/dida365-lazy-mcp.git
 cd dida365-lazy-mcp
 npm install
 npm run doctor
